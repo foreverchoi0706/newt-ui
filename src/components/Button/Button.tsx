@@ -1,11 +1,18 @@
-import React, { FC, ButtonHTMLAttributes } from "react";
+import React, {
+  ButtonHTMLAttributes,
+  ForwardRefExoticComponent,
+  PropsWithChildren,
+  forwardRef,
+} from "react";
 
-export interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  label: string;
-}
-
-const Button: FC<IProps> = (props) => {
-  return <button>{props.label}</button>;
-};
+const Button: ForwardRefExoticComponent<
+  PropsWithChildren<ButtonHTMLAttributes<HTMLButtonElement>>
+> = forwardRef(({ children, ...rest }) => {
+  return (
+    <button className="w-full border" {...rest}>
+      {children}
+    </button>
+  );
+});
 
 export default Button;
