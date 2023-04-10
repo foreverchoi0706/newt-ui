@@ -1,15 +1,15 @@
 import React, {
   ButtonHTMLAttributes,
-  ForwardRefExoticComponent,
   PropsWithChildren,
   forwardRef,
 } from "react";
 
-const Button: ForwardRefExoticComponent<
+const Button = forwardRef<
+  HTMLButtonElement,
   PropsWithChildren<ButtonHTMLAttributes<HTMLButtonElement>>
-> = forwardRef(({ children, ...rest }) => {
+>(({ children, ...rest }, ref) => {
   return (
-    <button className="w-full border" {...rest}>
+    <button ref={ref} className="w-full border" {...rest}>
       {children}
     </button>
   );
