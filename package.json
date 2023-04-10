@@ -27,6 +27,7 @@
     "@storybook/testing-library": "^0.0.14-next.2",
     "@types/react": "^18.0.33",
     "autoprefixer": "^10.4.14",
+    "classnames": "^2.3.2",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.2.4",
     "prop-types": "^15.8.1",
