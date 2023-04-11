@@ -1,7 +1,7 @@
 {
   "name": "newt-ui",
-  "version": "1.0.5",
-  "description": "",
+  "version": "1.0.7",
+  "description": "newt-ui",
   "main": "dist/cjs/index.js",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs",
