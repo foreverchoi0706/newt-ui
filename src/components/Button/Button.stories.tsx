@@ -20,5 +20,5 @@ export const Default: Story = {
 };
 
 export const Primary: Story = {
-  render: () => <Button.Primary>테스트</Button.Primary>,
+  render: () => <Button.Primary>dddd테스트</Button.Primary>,
 };
